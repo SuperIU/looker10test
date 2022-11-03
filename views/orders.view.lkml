@@ -28,6 +28,14 @@ view: orders {
     sql: ${TABLE}.created_at ;;
   }
 
+parameter: parameter_1 {
+  type: unquoted
+  allowed_value: {
+    label: "Some label name"
+    value: "value of the label"
+  }
+}
+
   dimension: status {
     type: string
     sql: ${TABLE}.status ;;
